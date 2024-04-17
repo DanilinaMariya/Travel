@@ -33,3 +33,22 @@ body {
     padding: 100px 120px;
   }
 }
+
+.overlay {
+  overflow: hidden;
+}
+
+.overlay main{
+  position: relative;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 56, 63, 0.6);
+    z-index: 10;
+  }
+}

@@ -1,5 +1,6 @@
 .header {
   background-color: $color-blue;
+  position: relative;
 }
 
 .header__wrapper {
@@ -11,7 +12,9 @@
   gap: 0 122px;
 
   @media (min-width: $width-tablet) {
-    grid-template-columns: 26px auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding: 20px 45px;
     justify-content: space-between;
     gap: 0;
@@ -19,9 +22,6 @@
 
   @media (min-width: $width-desktop) {
     padding: 32px 120px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
   }
 }
 
@@ -39,10 +39,6 @@
 
   &--activ {
     background-image: url("../../img/menu-close.svg");
-  }
-
-  @media (min-width: $width-tablet) {
-    grid-row: 1 / 2;
   }
 
   @media (max-width: 1439px) {
@@ -95,6 +91,20 @@
 }
 
 .header_nav {
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
+  background-color: $color-blue;
+
+  @media (max-width: 1439px) {
+    display: none;
+
+    &--open {
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateY(100%);
+      z-index: 20;
+    }
+  }
+
 }

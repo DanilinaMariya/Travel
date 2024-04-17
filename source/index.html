@@ -26,7 +26,7 @@
         <nav class="header_nav nav">
           <ul class="nav__list nav__list--header">
             <li class="nav__item">
-              <a class="nav__link nav__link--header" href="#">Туры</a>
+              <a class="nav__link nav__link--header" href="#hero">Туры</a>
             </li>
             <li class="nav__item">
               <a class="nav__link nav__link--header" href="#">Обучение</a>
@@ -48,6 +48,52 @@
         <a class="header__phone" href="tel:+78000000000">8 800 000-00-00</a>
       </div>
     </header>
+    <main>
+      <h1 class="visually-hidden">LIFETOUR.Организация походов в горы.</h1>
+      <section class="hero" data-test="hero" id="hero">
+        <!-- is-disabled - класс для блокировки ссылок, aria-disabled необходимо добавлять вручную.
+          Удаление hrev тоже реализовано. Показалось логичным использование отдельного класса,
+          т.к иногда требуется заблокировать ссылку на время, при том что старница существует.  -->
+        <div class="hero__swiper swiper">
+          <div class="hero__wrapper swiper-wrapper">
+            <div class="hero__slide slide-hero swiper-slide">
+              <div class="slide-hero__content wrapper">
+                <h2>Захватывающие вершины Кавказа</h2>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
+                <a class="slide-hero__link" href="#">Смотреть тур</a>
+                <div class="slide-hero__info">
+                  <span class="slide-hero__duration">6 дней/5 ночей</span>
+                  <span class="slide-hero__complexity">Высокая сложность</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero__slide swiper-slide">
+              <div class="slide-hero__content wrapper">
+                <h2>Невероятная природа Камчатки</h2>
+                <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                <a class="slide-hero__link" href="#">Смотреть тур</a>
+                <div class="slide-hero__info">
+                  <span class="slide-hero__duration">9 дней/10 ночей</span>
+                  <span class="slide-hero__complexity">Средняя сложность</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero__slide swiper-slide">
+              <div class="slide-hero__content wrapper">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
+                <a class="slide-hero__link" href="#">Смотреть тур</a>
+                <div class="slide-hero__info">
+                <span class="slide-hero__duration">8 дней/7 ночей</span>
+                <span class="slide-hero__complexity">Лёгкая сложность</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__pagination swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
   </body>
-  <script type="module" src="js/main.js"></script>
 </html>

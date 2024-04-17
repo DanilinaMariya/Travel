@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+}
+
+.hero__pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  display: flex;
+  gap: 20px;
+  transform: translateX(-50%);
+  z-index: 15;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid $color-white;
+  background-color: transparent;
+
+  @media (min-width: $width-tablet) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-white;
+}
