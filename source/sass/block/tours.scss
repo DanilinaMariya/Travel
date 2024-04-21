@@ -1,0 +1,132 @@
+.tours {
+  position: relative;
+}
+
+.tours__swiper {
+  margin: 25px 0;
+
+  @media (min-width: $width-desktop) {
+    margin: 53px 0;
+  }
+}
+
+.tours__buttons {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    display: flex;
+    gap: 4px;
+    width: fit-content;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 120px;
+  }
+}
+
+.tours_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 35px;
+  border: none;
+  background-color: $color-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+    border: 1px solid #1c3374;
+    fill: #1c3374;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    fill: #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    fill: $color-white;
+  }
+}
+
+.swiper-button-disabled {
+  background-color: #999999;
+  pointer-events: none;
+}
+
+.tours_button--next .tours__icon-button {
+  transform: rotate(180deg);
+}
+
+.tours__link {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  margin: 0 auto;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 10px ;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-primary;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: $color-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.tours__icon-link {
+  width: 6px;
+  height: 12px;
+  stroke: #2d383f;
+}
+
+.tours__link:hover .tours__icon-link {
+  stroke: rgba(2, 102, 193, 0.1);
+}
+
+.tours__link:focus .tours__icon-link {
+  stroke: $color-blue;
+}
+
+.tours__link:active .tours__icon-link {
+  stroke: #1c3374;
+}
+
+.tours__link.is-disabled,
+.tours__link:not([href]) {
+  color: #999999;
+  pointer-events: none;
+}
+
+.tours__link.is-disabled .tours__icon-link,
+.tours__link:not([href]) .tours__icon-link {
+  stroke: #999999;
+}

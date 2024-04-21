@@ -10,6 +10,12 @@
   gap: 20px;
   transform: translateX(-50%);
   z-index: 15;
+
+  @media (min-width: $width-desktop) {
+    left: auto;
+    right: 0;
+    bottom: 80px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -20,12 +26,17 @@
   border: 1px solid $color-white;
   background-color: transparent;
 
+  &:hover {
+    background-color: $color-white;
+  }
+
   @media (min-width: $width-tablet) {
     width: 20px;
     height: 20px;
   }
 }
 
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet:active {
   background-color: $color-white;
 }

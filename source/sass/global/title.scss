@@ -1,0 +1,49 @@
+.title {
+  position: relative;
+}
+
+.title__text {
+  padding-top: 16px;
+  padding-bottom: 17px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+  color: $color-primary;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 19px;
+    padding-bottom: 1px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+.title__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 26px;
+  color: rgba(45, 56, 63, 0.03);
+
+  @media (min-width: $width-tablet) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 55px;
+    line-height: 55px;
+  }
+}

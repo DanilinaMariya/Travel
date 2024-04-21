@@ -26,7 +26,7 @@
         <nav class="header_nav nav">
           <ul class="nav__list nav__list--header">
             <li class="nav__item">
-              <a class="nav__link nav__link--header" href="#hero">Туры</a>
+              <a class="nav__link nav__link--header" href="#tours">Туры</a>
             </li>
             <li class="nav__item">
               <a class="nav__link nav__link--header" href="#">Обучение</a>
@@ -56,7 +56,7 @@
           т.к иногда требуется заблокировать ссылку на время, при том что старница существует.  -->
         <div class="hero__swiper swiper">
           <div class="hero__wrapper swiper-wrapper">
-            <div class="hero__slide slide-hero swiper-slide">
+            <div class="hero__slide slide-hero slide-hero--first swiper-slide">
               <div class="slide-hero__content wrapper">
                 <h2>Захватывающие вершины Кавказа</h2>
                 <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
@@ -67,7 +67,7 @@
                 </div>
               </div>
             </div>
-            <div class="hero__slide swiper-slide">
+            <div class="hero__slide slide-hero slide-hero--second swiper-slide">
               <div class="slide-hero__content wrapper">
                 <h2>Невероятная природа Камчатки</h2>
                 <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
@@ -78,7 +78,7 @@
                 </div>
               </div>
             </div>
-            <div class="hero__slide swiper-slide">
+            <div class="hero__slide slide-hero slide-hero--third swiper-slide">
               <div class="slide-hero__content wrapper">
                 <h2>Магические пейзажи Алтайского Края</h2>
                 <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
@@ -92,6 +92,212 @@
           </div>
           <div class="hero__pagination swiper-pagination"></div>
         </div>
+      </section>
+      <section class="tours wrapper" data-test="tours" id="tours">
+        <div class="tours__title-conteiner title">
+          <h2 class="tours__title title__text">Ближайшие туры</h2>
+          <span class="tours__title-shadow title__shadow" aria-disabled="true">Ближайшие туры</span>
+        </div>
+        <div class="tours__swiper swiper">
+          <div class="tours__wrapper swiper-wrapper">
+            <div class="tours__slide slide-tours swiper-slide">
+              <div class="slide-tours__content">
+                <div class="slide-tours__data">
+                  <span class="slide-tours__site">Кавказ</span>
+                  <div class="slide-tours__duration">
+                    <span class="slide-tours__days">4 дня</span>
+                    <span class="slide-tours__nights">3 ночи</span>
+                  </div>
+                </div>
+                <h3 class="slide-tours__title">Путешествие вокруг Эльбруса</h3>
+                <div class="slide-tours__info">
+                  <dl class="slide-tours__info-list">
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Сложность:</dt>
+                      <dd class="slide-tours__complexity">
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star"></use>
+                        </svg>
+                      </dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Даты набора:</dt>
+                      <dd class="slide-tours__description">12.06–19.06</dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Группа:</dt>
+                      <dd class="slide-tours__description">до 15 чел.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide slide-tours swiper-slide">
+              <div class="slide-tours__content">
+                <div class="slide-tours__data">
+                  <span class="slide-tours__site">Алтай</span>
+                  <div class="slide-tours__duration">
+                    <span class="slide-tours__days">14 дней</span>
+                    <span class="slide-tours__nights">13 ночей</span>
+                  </div>
+                </div>
+                <h3 class="slide-tours__title">Путь к подножию Белухи</h3>
+                <div class="slide-tours__info">
+                  <dl class="slide-tours__info-list">
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Сложность:</dt>
+                      <dd class="slide-tours__complexity">
+                      <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star"></use>
+                        </svg>
+                      </dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Даты набора:</dt>
+                      <dd class="slide-tours__description">14.06–23.06</dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Группа:</dt>
+                      <dd class="slide-tours__description">до 25 чел.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide slide-tours swiper-slide">
+              <div class="slide-tours__content">
+                <div class="slide-tours__data">
+                  <span class="slide-tours__site">Адыгея</span>
+                  <div class="slide-tours__duration">
+                    <span class="slide-tours__days">7 дней</span>
+                    <span class="slide-tours__nights">6 ночей</span>
+                  </div>
+                </div>
+                <h3 class="slide-tours__title">Через Фишт к Чёрному морю и обратно</h3>
+                <div class="slide-tours__info">
+                  <dl class="slide-tours__info-list">
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Сложность:</dt>
+                      <dd class="slide-tours__complexity">
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star"></use>
+                        </svg>
+                      </dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Даты набора:</dt>
+                      <dd class="slide-tours__description">15.07–19.07</dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Группа:</dt>
+                      <dd class="slide-tours__description">до 22 чел.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="tours__slide slide-tours swiper-slide">
+              <div class="slide-tours__content">
+                <div class="slide-tours__data">
+                  <span class="slide-tours__site">Урал</span>
+                  <div class="slide-tours__duration">
+                    <span class="slide-tours__days">9 дней</span>
+                    <span class="slide-tours__nights">10 ночей</span>
+                  </div>
+                </div>
+                <h3 class="slide-tours__title">Восхождение Манарага</h3>
+                <div class="slide-tours__info">
+                  <dl class="slide-tours__info-list">
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Сложность:</dt>
+                      <dd class="slide-tours__complexity">
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                        <svg class="slide-tours__icon" width="16" height="16">
+                          <use href="/__spritemap#sprite-star-white"></use>
+                        </svg>
+                      </dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Даты набора:</dt>
+                      <dd class="slide-tours__description">12.07–19.07</dd>
+                    </div>
+                    <div class="slide-tours__info-wrapper">
+                      <dt class="slide-tours__subtitle">Группа:</dt>
+                      <dd class="slide-tours__description">до 7 чел.</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tours__buttons">
+          <button class="tours_button tours_button--prew swiper-button-prev">
+            <svg class="tours__icon-button" width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+          <button class="tours_button tours_button--next swiper-button-next">
+            <svg class="tours__icon-button" width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- is-disabled - класс для блокировки ссылок, aria-disabled необходимо добавлять вручную.
+        Удаление hrev тоже реализовано. Показалось логичным использование отдельного класса,
+        т.к иногда требуется заблокировать ссылку на время, при том что старница существует.  -->
+        <a class="tours__link" href="#">Показать все туры
+          <svg class="tours__icon-link" width="6" height="12">
+            <use href="/__spritemap#sprite-tours-link"></use>
+          </svg>
+        </a>
       </section>
     </main>
     <script type="module" src="js/main.js"></script>

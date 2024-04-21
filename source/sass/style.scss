@@ -8,6 +8,7 @@
 @import "./global/variables";
 @import "./global/global";
 @import "./global/visually-hidden";
+@import "./global/title";
 
 /* BLOCKS */
 
@@ -15,3 +16,5 @@
 @import "./block/nav";
 @import "./block/hero";
 @import "./block/slide-hero";
+@import "./block/tours";
+@import "./block/slide-tours";
