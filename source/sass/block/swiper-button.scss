@@ -1,0 +1,49 @@
+.swiper-buttons {
+  display: none;
+
+  @media (min-width: $width-tablet) {
+    position: absolute;
+    display: flex;
+    gap: 4px;
+    width: fit-content;
+  }
+}
+
+.swiper-buttons__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 35px;
+  border: none;
+  background-color: $color-blue;
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+    border: 1px solid #1c3374;
+    fill: #1c3374;
+  }
+
+  &:focus {
+    background-color: $color-white;
+    fill: #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #1c3374;
+    fill: $color-white;
+  }
+}
+
+.swiper-button-disabled {
+  background-color: #999999;
+  pointer-events: none;
+}
+
+.swiper-buttons__button--next .swiper-buttons__icon-button {
+  transform: rotate(180deg);
+}

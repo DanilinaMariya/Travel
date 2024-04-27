@@ -6,3 +6,5 @@
 import './header';
 import './hero';
 import './tours';
+import './instructors';
+import './reviews';

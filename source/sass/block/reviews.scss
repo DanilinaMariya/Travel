@@ -1,0 +1,86 @@
+.reviews {
+  position: relative;
+
+  @media (min-width: $width-desktop) {
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -18px;
+      bottom: -10%;
+      width: 1200px;
+      height: 401px;
+      background-image: image-set(
+        url("../../img/clouds-3@2x.webp") type("image/webp") 2x,
+        url("../../img/clouds-3.webp") type("image/webp") 1x,
+        url("../../img/clouds-3@2x.png") type("image/png") 2x,
+        url("../../img/clouds-3.png") type("image/png") 1x,
+      );
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 14%;
+      bottom: -15%;
+      transform: translateX(50%);
+      width: 788px;
+      height: 263px;
+      background-image: image-set(
+        url("../../img/clouds-4@2x.webp") type("image/webp") 2x,
+        url("../../img/clouds-4.webp") type("image/webp") 1x,
+        url("../../img/clouds-4@2x.png") type("image/png") 2x,
+        url("../../img/clouds-4.png") type("image/png") 1x,
+      );
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  }
+}
+
+.reviews__wrapper {
+  position: relative;
+  @media (min-width: $width-tablet) {
+    padding-right: 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 77px;
+  }
+}
+
+
+.reviews__swiper.swiper {
+  overflow: visible;
+}
+
+.reviews__swiper {
+  margin-top: 15px;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 38px;
+  }
+}
+
+.reviews__swiper-wrapper {
+  @media (min-width: $width-desktop) {
+    padding: 10px;
+  }
+}
+
+
+.reviews__buttons {
+  top: 60px;
+  right: 45px;
+
+  @media (min-width: $width-desktop) {
+    top: 120px;
+    right: 120px;
+  }
+}

@@ -23,8 +23,8 @@ new Swiper ('.tours__swiper', {
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.tours__button--next',
+    prevEl: '.tours__button--prew',
   }
 }
 );

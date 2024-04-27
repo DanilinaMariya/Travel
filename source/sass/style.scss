@@ -10,11 +10,20 @@
 @import "./global/visually-hidden";
 @import "./global/title";
 
+
 /* BLOCKS */
 
 @import "./block/header";
+@import "./block/swiper-button";
 @import "./block/nav";
 @import "./block/hero";
 @import "./block/slide-hero";
 @import "./block/tours";
 @import "./block/slide-tours";
+@import "./block/training";
+@import "./block/instructors";
+@import "./block/slide-instructors";
+@import "./block/stages";
+@import "./block/about";
+@import "./block/reviews";
+@import "./block/slide-reviews";

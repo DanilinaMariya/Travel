@@ -1,0 +1,43 @@
+.instructors {
+  position: relative;
+  padding: 25px 0;
+
+  @media (min-width: $width-desktop) {
+    padding: 56px 0;;
+  }
+}
+
+.instructors__title {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 25px;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 22px;
+
+  @media (min-width: $width-tablet) {
+    padding-bottom: 30px;
+    font-size: 25px;
+    line-height: 25px;
+    height: 35px;
+    box-sizing: content-box;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.instructors__swiper-buttons {
+  @media (min-width: $width-tablet) {
+    right: 0;
+    top: 25px;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 56px;
+  }
+}
