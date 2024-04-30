@@ -1,0 +1,129 @@
+.footer {
+  padding: 20px 0;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 100px;
+    padding-bottom: 32px;
+  }
+}
+
+.footer__content {
+  padding-top: 23px;
+  border-top: 1px solid rgba(45, 56, 63, 0.5);
+
+  @media (min-width: $width-tablet) {
+    padding-top: 34px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 32px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto auto;
+  }
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: auto auto 200px;
+  }
+}
+
+.footer__logo {
+  fill: $color-primary;
+
+  @media (min-width: $width-tablet) {
+    width: 142px;
+    height: 42px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 200px;
+    height: 60px;
+  }
+}
+
+.footer__phone {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: $color-primary;
+  text-decoration: none;
+  margin-left: 55px;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: $color-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.footer__phone.is-disabled,
+.footer__phone:not([href]),
+.footer__confidentiality.is-disabled,
+.footer__confidentiality:not([href]) {
+  color: #999999;
+  pointer-events: none;
+}
+
+
+.footer__confidentiality {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  color: $color-primary;
+  text-decoration: none;
+  width: max-content;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: $color-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 0 auto;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+}
+
+
+.footer__socials {
+  @media (min-width: $width-tablet) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+}

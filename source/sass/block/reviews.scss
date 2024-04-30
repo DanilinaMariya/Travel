@@ -29,8 +29,8 @@
       width: 788px;
       height: 263px;
       background-image: image-set(
-        url("../../img/clouds-4@2x.webp") type("image/webp") 2x,
-        url("../../img/clouds-4.webp") type("image/webp") 1x,
+        url("../../img/clouds-2@2x.webp") type("image/webp") 2x,
+        url("../../img/clouds-2.webp") type("image/webp") 1x,
         url("../../img/clouds-4@2x.png") type("image/png") 2x,
         url("../../img/clouds-4.png") type("image/png") 1x,
       );
@@ -42,45 +42,43 @@
 
 .reviews__wrapper {
   position: relative;
+  padding: 20px 5px 10px;
+
   @media (min-width: $width-tablet) {
-    padding-right: 0;
+    padding: 40px 0 30px 30px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-bottom: 77px;
+    padding: 100px 0px 100px 120px;
   }
 }
-
 
 .reviews__swiper.swiper {
-  overflow: visible;
-}
-
-.reviews__swiper {
-  margin-top: 15px;
+  padding: 15px 10px 10px;
 
   @media (min-width: $width-tablet) {
-    margin-top: 25px;
+    padding-top: 25px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: 38px;
+    padding-top: 38px;
   }
 }
-
-.reviews__swiper-wrapper {
-  @media (min-width: $width-desktop) {
-    padding: 10px;
-  }
-}
-
 
 .reviews__buttons {
   top: 60px;
   right: 45px;
 
   @media (min-width: $width-desktop) {
-    top: 120px;
+    top: 135px;
     right: 120px;
+  }
+}
+
+.reviews__title-conteiner {
+  padding-left: 10px;
+
+  @media (min-width: $width-desktop) {
+    padding-left: 0;
   }
 }

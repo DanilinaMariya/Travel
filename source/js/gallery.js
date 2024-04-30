@@ -2,27 +2,28 @@ import Swiper from 'swiper';
 import {Navigation} from 'swiper/modules';
 import 'swiper/css';
 
-new Swiper ('.reviews__swiper', {
+new Swiper ('.gallery__swiper', {
   modules: [Navigation],
-  loop: false,
+  loop: true,
   simulateTouch: true,
-  slidesPerView: 'auto',
-  spaceBetween: 10,
-
+  spaceBetween: 5,
   breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
     768: {
-      spaceBetween: 30,
+      slidesPerView: 3,
     },
     1440: {
-      spaceBetween: 120,
+      loop: false,
+      slidesPerView: 5,
       simulateTouch: false,
-      centeredSlides: false,
     }
   },
 
   navigation: {
-    nextEl: '.reviews__button--next',
-    prevEl: '.reviews__button--prev',
+    nextEl: '.gallery__button--next',
+    prevEl: '.gallery__button--prev',
   }
 }
 );

@@ -13,7 +13,6 @@
     <link rel="preload" href="./fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
-
   <body>
     <header class="header" data-test="header">
       <div class="header__wrapper wrapper">
@@ -38,10 +37,10 @@
               <a class="nav__link nav__link--header" href="#reviews">Отзывы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--header" href="#">Фотографии</a>
+              <a class="nav__link nav__link--header" href="#gallery">Фотографии</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--header" href="#">Контакты</a>
+              <a class="nav__link nav__link--header" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -94,13 +93,13 @@
         </div>
       </section>
       <section class="tours" data-test="tours" id="tours">
-        <div class="tours__wrapper  wrapper">
+        <div class="tours__wrapper wrapper">
           <div class="tours__title-conteiner title">
             <h2 class="tours__title title__text">Ближайшие туры</h2>
             <span class="tours__title-shadow title__shadow" aria-disabled="true">Ближайшие туры</span>
           </div>
           <div class="tours__swiper swiper">
-            <div class="tours__wrapper swiper-wrapper">
+            <div class="tours__swiper-wrapper swiper-wrapper">
               <div class="tours__slide slide-tours swiper-slide">
                 <div class="slide-tours__content">
                   <div class="slide-tours__data">
@@ -562,12 +561,12 @@
             </div>
           </div>
           <div class="reviews__buttons swiper-buttons">
-            <button class="reviews__burron reviews__burron--prev swiper-buttons__button swiper-button-prev" type="button">
+            <button class="reviews__button reviews__button--prev swiper-buttons__button swiper-button-prev" type="button">
               <svg class="swiper-buttons__icon-button" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </button>
-            <button class="reviews__burron reviews__burron-next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+            <button class="reviews__button reviews__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
               <svg class="swiper-buttons__icon-button" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
@@ -575,6 +574,219 @@
           </div>
         </div>
       </section>
+      <section class="adv wrapper" data-test="adv" id="adv">
+        <div class="adv__title-conteiner title">
+          <h2 class="adv__title title__text">Преимущества</h2>
+          <span class="adv__title-shadow title__shadow" aria-disabled="true">Преимущества</span>
+        </div>
+        <div class="adv__conteiner">
+          <ul class="adv__list">
+            <li class="adv__item">
+              <div class="adv__content adv__content--safety">
+                <h3>Безопасность</h3>
+                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+              </div>
+            </li>
+            <li class="adv__item">
+              <div class="adv__content adv__content--expertise">
+                <h3>Экспертиза и знания</h3>
+                <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+              </div>
+            </li>
+            <li class="adv__item">
+              <div class="adv__content adv__content--equipment">
+                <h3>Оборудование и снаряжение</h3>
+                <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+              </div>
+            </li>
+            <li class="adv__item">
+              <div class="adv__content adv__content--routes">
+                <h3>Индивидуальные маршруты</h3>
+                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+              </div>
+            </li>
+            <li class="adv__item">
+              <div class="adv__content adv__content--nature">
+                <h3>Бережное отношение к природе</h3>
+                <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="adv__buttons swiper-buttons">
+          <button class="adv__button adv__button--prev swiper-buttons__button swiper-button-prev" type="button">
+            <svg class="swiper-buttons__icon-button" width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+          <button class="adv__button adv__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+            <svg class="swiper-buttons__icon-button" width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="gallery wrapper" data-test="gallery" id="gallery">
+        <div class="gallery__info">
+          <div class="gallery__title-conteiner title">
+            <h2 class="gallery__title title__text">Фотогалерея</h2>
+            <span class="gallery__title-shadow title__shadow" aria-disabled="true">Фотогалерея</span>
+          </div>
+          <p>Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        </div>
+        <div class="gallery__swiper swiper">
+          <div class="gallery__wrapper swiper-wrapper">
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__content">
+                <img class="gallery__image" src="./img/gallery-photo-1.jpg" srcset="./img/gallery-photo-1.jpg 1x, ./img/gallery-photo-1@2x.jpg 2x" width="158" height="266" alt="Фото из путешествий.">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__content gallery__content--double">
+                <img class="gallery__image" src="./img/gallery-photo-2.jpg" srcset="./img/gallery-photo-2.jpg 1x, ./img/gallery-photo-2@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
+                <img class="gallery__image" src="./img/gallery-photo-3.jpg" srcset="./img/gallery-photo-3.jpg 1x, ./img/gallery-photo-3@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__content">
+                <img class="gallery__image" src="./img/gallery-photo-4.jpg" srcset="./img/gallery-photo-4.jpg 1x, ./img/gallery-photo-4@2x.jpg 2x" width="158" height="266" alt="Фото из путешествий.">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__content gallery__content--double">
+                <img class="gallery__image" src="./img/gallery-photo-5.jpg" srcset="./img/gallery-photo-5.jpg 1x, ./img/gallery-photo-5@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
+                <img class="gallery__image" src="./img/gallery-photo-6.jpg" srcset="./img/gallery-photo-6.jpg 1x, ./img/gallery-photo-6@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
+              </div>
+            </div>
+            <div class="gallery__slide swiper-slide">
+              <div class="gallery__content">
+                <img class="gallery__image" src="./img/gallery-photo-7.jpg" srcset="./img/gallery-photo-7.jpg 1x, ./img/gallery-photo-7@2x.jpg 2x" width="158" height="266" alt="Фото из путешествий.">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__buttons swiper-buttons">
+          <button class="gallery__button gallery__button--prev swiper-buttons__button swiper-button-prev" type="button">
+            <svg class="swiper-buttons__icon-button" width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+          <button class="gallery__button gallery__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+            <svg class="swiper-buttons__icon-button" width="14" height="9">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="form-conteiner" data-test="form" id="form">
+        <div class="form-conteiner__content">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется <br>с вами для консультации.</p>
+          <form class="form-conteiner__item form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="form__item">
+              <input class="form__input" type="tel" name="phone" id="tel" placeholder="88000000000" value="" pattern="[0-9]{11}" required >
+              <label class="form__label" for="tel">Телефон</label>
+            </div>
+            <div class="form__item">
+              <input class="form__input" type="email" name="email" id="email" placeholder="name@mail.ru" value="" pattern="^\S+@\S+\.\S+$" required>
+              <label class="form__label" for="email">Email</label>
+            </div>
+            <button class="form__button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer" data-test="footer">
+        <section class="footer__contacts contacts" id="contacts">
+          <div class="contacts__wrapper">
+            <div class="contacts__title-conteiner title">
+              <h2 class="contacts__title title__text">Контакты</h2>
+              <span class="contacts__title-shadow title__shadow" aria-disabled="true">Контакты</span>
+            </div>
+            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--phone">
+                <h3 class="contacts__subtitle">Телефон</h3>
+                <a class="contacts__description contacts__description--link" href="tel:+79837454545">+7 983 745-45-45</a>
+              </li>
+              <li class="contacts__item contacts__item--email">
+                <h3 class="contacts__subtitle">Email</h3>
+                <a class="contacts__description contacts__description--link" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
+              <li class="contacts__item">
+                <h3 class="contacts__subtitle">Адрес</h3>
+                <address class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101</address>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__map-conteiner">
+            <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x" width="600" height="324">
+              <source type="image/webp" media="(min-width:768px)" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x" width="768" height="340">
+              <source type="image/webp" srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x" width="320" height="343">
+              <source type="image/png" media="(min-width:1440px)" srcset="./img/map-desktop.png 1x, ./img/map-desktop@2x.png 2x" width="600" height="324">
+              <source type="image/png" media="(min-width:768px)" srcset="./img/map-tablet.png 1x, ./img/map-tablet@2x.png 2x" width="768" height="340">
+              <img class="contacts__map" src="./img/map-mobile.png" srcset="./img/map-mobile.png 1x, ./img/map-mobile@2x.png 2x" width="320" height="343" alt="Местоположение на карте.">
+            </picture>
+          </div>
+        </section>
+        <section class="footer__content">
+          <div class="footer__wrapper wrapper">
+            <svg class="footer__logo" width="142" height="42">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+            <div class="footer_nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="#tours">Туры</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#training">Обучение</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#about">О нас</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#reviews">Отзывы</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#gallery">Фотографии</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#contacts">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
+            <ul class="footer__socials socials">
+              <li class="socials__item">
+                <a class="socials__link" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Группа Вконтакте.</span>
+                  <svg class="socials__icon" width="14" height="14">
+                    <use href="/__spritemap#sprite-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://ok.ru/">
+                  <span class="visually-hidden">Страница в Одноклассниках.</span>
+                  <svg class="socials__icon" width="9" height="16">
+                    <use href="/__spritemap#sprite-ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="https://www.reddit.com/">
+                  <span class="visually-hidden">Страница Реддит.</span>
+                  <svg class="socials__icon" width="14" height="14">
+                    <use href="/__spritemap#sprite-reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a class="footer__confidentiality" href="#">Политика конфиденциальности</a>
+          </div>
+        </section>
+      </footer>
     </main>
     <script type="module" src="js/main.js"></script>
   </body>

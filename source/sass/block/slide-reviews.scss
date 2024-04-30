@@ -100,18 +100,3 @@
   }
 }
 
-.swiper-slide {
-  visibility: hidden;
-}
-
-.swiper-slide-next {
-  @media (max-width: 767px) {
-    visibility: hidden;
-  }
-}
-
-.swiper-slide-active,
-.swiper-slide-next {
-  visibility: visible;
-}
-

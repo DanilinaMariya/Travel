@@ -8,3 +8,5 @@ import './hero';
 import './tours';
 import './instructors';
 import './reviews';
+import './adv';
+import './gallery';
