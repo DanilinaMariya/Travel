@@ -14,7 +14,9 @@
 
   @media (min-width: $width-desktop) {
     gap: 15px;
-    max-width: 315px;
+    width: 138px;
+    padding-top: 4px;
+    justify-content: flex-start;
   }
 }
 
@@ -25,7 +27,7 @@
   width: 32px;
   height: 30px;
   background-color: $color-white;
-  border: 1px solid rgba(45, 56, 63, 0.30);
+  border: 1px solid rgba(45, 56, 63, 0.3);
   fill: $color-primary;
 
   &:hover {
@@ -39,6 +41,10 @@
   &:active {
     background-color: $color-blue;
     fill: $color-white;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 30px;
   }
 }
 

@@ -7,9 +7,10 @@ new Swiper ('.hero__swiper', {
   loop: true,
   simulateTouch: true,
   watchSlidesProgress: true,
+
   breakpoints: {
     1440: {
-      simulateTouch: false
+      simulateTouch: false,
     }
   },
 

@@ -18,7 +18,7 @@ new Swiper ('.tours__swiper', {
     1440: {
       slidesPerView: 3,
       simulateTouch: false,
-      spaceBetween: 40,
+      spaceBetween: 30,
     }
   },
 

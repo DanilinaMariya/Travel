@@ -10,3 +10,4 @@ import './instructors';
 import './reviews';
 import './adv';
 import './gallery';
+import './form';

@@ -2,10 +2,10 @@
   min-height: 484px;
   max-height: 484px;
   max-width: 290px;
-  padding: 20px;
+  padding: 18px 19px 0;
   background-color: $color-white;
   border: 1px solid $color-white;
-  box-shadow: 0px 0px 20px 0px rgba(28, 51, 115, 0.1);
+  box-shadow: 0 0 20px 0 rgba(28, 51, 115, 0.1);
 
   @media (min-width: $width-tablet) {
     max-width: 565px;
@@ -13,7 +13,7 @@
     max-height: 277px;
     padding-right: 30px;
     border: none;
-    box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.10);
+    box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   }
 
   @media (min-width: $width-desktop) {
@@ -21,7 +21,7 @@
     max-width: 700px;
     min-height: 293px;
     max-height: 293px;
-    box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.10);
+    box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
   }
 }
 
@@ -40,6 +40,10 @@
 
 .slide-reviews__img {
   display: block;
+
+  @media (min-width: $width-desktop) {
+    margin-top: -1px;
+  }
 }
 
 .slide-reviews p {
@@ -58,21 +62,37 @@
   }
 }
 
+.slide-reviews p:nth-child(2) {
+  @media (min-width: $width-tablet) {
+    padding-top: 2px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 8px;
+  }
+}
+
+.slide-reviews__text br {
+  @media (width <= 1439px) {
+    display: none;
+  }
+}
+
 .slide-reviews__name {
-  padding: 15px 0 5px;
+  padding: 16px 0 3px;
   margin: 0;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;
 
   @media (min-width: $width-tablet) {
-    padding: 25px 0 6px;
+    padding: 26px 0 1px;
     font-size: 13px;
     line-height: 13px;
   }
 
   @media (min-width: $width-desktop) {
-    padding: 2px 0 8px;
+    padding: 4px 0 3px;
   }
 }
 
@@ -83,7 +103,7 @@
 }
 
 .slide-reviews__text {
-  margin-top: 20px;
+  margin-top: 19px;
   height: 208px;
   overflow-y: auto;
   display: flex;
@@ -92,11 +112,19 @@
 
   @media (min-width: $width-tablet) {
     margin: 0;
-    height: 172px;
+    padding-top: 2px;
+    height: 174px;
   }
 
   @media (min-width: $width-desktop) {
     height: 208px;
+    justify-content: flex-start;
+    padding: 0;
   }
 }
 
+.slide-reviews__info {
+  @media (min-width: $width-desktop) {
+    padding-bottom: 10px;
+  }
+}

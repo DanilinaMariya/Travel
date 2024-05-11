@@ -16,13 +16,13 @@
   <body>
     <header class="header" data-test="header">
       <div class="header__wrapper wrapper">
-        <button class="header__button">
+        <button class="header__button" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
         <svg class="header__logo" width="142" height="42">
           <use href="/__spritemap#sprite-logo"></use>
         </svg>
-        <nav class="header_nav nav">
+        <nav class="header__nav nav">
           <ul class="nav__list nav__list--header">
             <li class="nav__item">
               <a class="nav__link nav__link--header" href="#tours">Туры</a>
@@ -48,7 +48,7 @@
       </div>
     </header>
     <main>
-      <h1 class="visually-hidden">LIFETOUR.Организация походов в горы.</h1>
+      <h1 class="visually-hidden">LIFETOUR.Организация походов в горы</h1>
       <section class="hero" data-test="hero" id="hero">
         <!-- is-disabled - класс для блокировки ссылок, aria-disabled необходимо добавлять вручную.
           Удаление hrev тоже реализовано. Показалось логичным использование отдельного класса,
@@ -279,12 +279,14 @@
             </div>
           </div>
           <div class="tours__buttons swiper-buttons">
-            <button class="tours_button tours__button--prew swiper-buttons__button swiper-button-prev">
+            <button class="tours__button tours__button--prew swiper-buttons__button swiper-button-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
               <svg class="swiper-buttons__icon-button" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </button>
-            <button class="tours_button tours__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next">
+            <button class="tours__button tours__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
               <svg class="swiper-buttons__icon-button" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
@@ -294,150 +296,159 @@
           Удаление hrev тоже реализовано. Показалось логичным использование отдельного класса,
           т.к иногда требуется заблокировать ссылку на время, при том что старница существует.  -->
           <a class="tours__link" href="#">Показать все туры
-            <svg class="tours__icon-link" width="6" height="12">
+            <svg class="tours__icon-link" width="9" height="14">
               <use href="/__spritemap#sprite-tours-link"></use>
             </svg>
           </a>
         </div>
       </section>
-      <section class="training wrapper" data-test="training" id="training">
-        <div class="training__title-conteiner title">
-          <h2 class="training__title title__text">Обучение</h2>
-          <span class="training__title-shadow title__shadow" aria-disabled="true">Обучение</span>
-        </div>
-        <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-        <div class="training__instructors instructors">
-          <h3 class="instructors__title">Наши инструкторы</h3>
-          <div class="instructors__swiper swiper">
-            <div class="instructors__swiper-wrapper swiper-wrapper">
-              <div class="instructors__slide slide-instructors swiper-slide">
-                <div class="slide-instructors__content">
-                  <div class="slide-instructors__image">
-                    <picture>
-                      <source type="image/webp" srcset="./img/instructor-1.webp 1x, ./img/instructor-1@2x.webp 2x">
-                      <img class="slide-instructors__img" src="./img/instructor-1.jpg" srcset="./img/instructor-1.jpg 1x, ./img/instructor-1@2x.jpg 2x" width="260" height="200" alt="Фото Александра Прокофьева.">
-                    </picture>
+      <section class="training" data-test="training" id="training">
+        <div class="training__wrapper wrapper">
+          <div class="training__title-conteiner title">
+            <h2 class="training__title title__text">Обучение</h2>
+            <span class="training__title-shadow title__shadow" aria-disabled="true">Обучение</span>
+          </div>
+          <p>Обучение проводится квалифицированными специалистами, <br>за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+          <div class="training__instructors instructors">
+            <h3 class="instructors__title">Наши инструкторы</h3>
+            <div class="instructors__swiper swiper">
+              <div class="instructors__swiper-wrapper swiper-wrapper">
+                <div class="instructors__slide slide-instructors swiper-slide">
+                  <div class="slide-instructors__content">
+                    <div class="slide-instructors__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/instructor-1.webp 1x, ./img/instructor-1@2x.webp 2x">
+                        <img class="slide-instructors__img" src="./img/instructor-1.jpg" srcset="./img/instructor-1.jpg 1x, ./img/instructor-1@2x.jpg 2x" width="260" height="200" alt="Фото Александра Прокофьева.">
+                      </picture>
+                    </div>
+                    <h3>Александр Прокофьев</h3>
+                    <a class="slide-instructors__link" href="#">
+                      <span class="visually-hidden">Слылка на страницу Вконтакте</span>
+                      <svg class="slide-instructors__icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                    <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
                   </div>
-                  <h3>Александр Прокофьев</h3>
-                  <a class="slide-instructors__link" href="#">
-                    <svg class="slide-instructors__icon" width="14" height="8">
-                      <use href="/__spritemap#sprite-vk"></use>
-                    </svg>
-                  </a>
-                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
                 </div>
-              </div>
-              <div class="instructors__slide slide-instructors swiper-slide">
-                <div class="slide-instructors__content">
-                  <div class="slide-instructors__image">
-                    <picture>
-                      <source type="image/webp" srcset="./img/instructor-2.webp 1x, ./img/instructor-2@2x.webp 2x">
-                      <img class="slide-instructors__img" src="./img/instructor-2.jpg" srcset="./img/instructor-2.jpg 1x, ./img/instructor-2@2x.jpg 2x" width="260" height="200" alt="Фото Светланы Афиногеновой.">
-                    </picture>
+                <div class="instructors__slide slide-instructors swiper-slide">
+                  <div class="slide-instructors__content">
+                    <div class="slide-instructors__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/instructor-2.webp 1x, ./img/instructor-2@2x.webp 2x">
+                        <img class="slide-instructors__img" src="./img/instructor-2.jpg" srcset="./img/instructor-2.jpg 1x, ./img/instructor-2@2x.jpg 2x" width="260" height="200" alt="Фото Светланы Афиногеновой.">
+                      </picture>
+                    </div>
+                    <h3>Светлана Афиногенова</h3>
+                    <a class="slide-instructors__link" href="#">
+                      <span class="visually-hidden">Слылка на страницу Вконтакте</span>
+                      <svg class="slide-instructors__icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                    <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
                   </div>
-                  <h3>Светлана Афиногенова</h3>
-                  <a class="slide-instructors__link" href="#">
-                    <svg class="slide-instructors__icon" width="14" height="8">
-                      <use href="/__spritemap#sprite-vk"></use>
-                    </svg>
-                  </a>
-                  <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
                 </div>
-              </div>
-              <div class="instructors__slide slide-instructors swiper-slide">
-                <div class="slide-instructors__content">
-                  <div class="slide-instructors__image">
-                    <picture>
-                      <source type="image/webp" srcset="./img/instructor-3.webp 1x, ./img/instructor-3@2x.webp 2x">
-                      <img class="slide-instructors__img" src="./img/instructor-3.jpg" srcset="./img/instructor-3.jpg 1x, ./img/instructor-3@2x.jpg 2x" width="260" height="200" alt="Фото Надежды Колесниченко.">
-                    </picture>
+                <div class="instructors__slide slide-instructors swiper-slide">
+                  <div class="slide-instructors__content">
+                    <div class="slide-instructors__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/instructor-3.webp 1x, ./img/instructor-3@2x.webp 2x">
+                        <img class="slide-instructors__img" src="./img/instructor-3.jpg" srcset="./img/instructor-3.jpg 1x, ./img/instructor-3@2x.jpg 2x" width="260" height="200" alt="Фото Надежды Колесниченко.">
+                      </picture>
+                    </div>
+                    <h3>Надежда Колесниченко</h3>
+                    <a class="slide-instructors__link" href="#">
+                      <span class="visually-hidden">Слылка на страницу Вконтакте</span>
+                      <svg class="slide-instructors__icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                    <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
                   </div>
-                  <h3>Надежда Колесниченко</h3>
-                  <a class="slide-instructors__link" href="#">
-                    <svg class="slide-instructors__icon" width="14" height="8">
-                      <use href="/__spritemap#sprite-vk"></use>
-                    </svg>
-                  </a>
-                  <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
                 </div>
-              </div>
-              <div class="instructors__slide slide-instructors swiper-slide">
-                <div class="slide-instructors__content">
-                  <div class="slide-instructors__image">
-                    <picture>
-                      <source type="image/webp" srcset="./img/instructor-4.webp 1x, ./img/instructor-4@2x.webp 2x">
-                      <img class="slide-instructors__img" src="./img/instructor-4.jpg" srcset="./img/instructor-4.jpg 1x, ./img/instructor-4@2x.jpg 2x" width="260" height="200" alt="Фото Федора Кайгородова.">
-                    </picture>
+                <div class="instructors__slide slide-instructors swiper-slide">
+                  <div class="slide-instructors__content">
+                    <div class="slide-instructors__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/instructor-4.webp 1x, ./img/instructor-4@2x.webp 2x">
+                        <img class="slide-instructors__img" src="./img/instructor-4.jpg" srcset="./img/instructor-4.jpg 1x, ./img/instructor-4@2x.jpg 2x" width="260" height="200" alt="Фото Федора Кайгородова.">
+                      </picture>
+                    </div>
+                    <h3>Федор Кайгородов</h3>
+                    <a class="slide-instructors__link" href="#">
+                      <span class="visually-hidden">Слылка на страницу Вконтакте</span>
+                      <svg class="slide-instructors__icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
                   </div>
-                  <h3>Федор Кайгородов</h3>
-                  <a class="slide-instructors__link" href="#">
-                    <svg class="slide-instructors__icon" width="14" height="8">
-                      <use href="/__spritemap#sprite-vk"></use>
-                    </svg>
-                  </a>
-                  <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
                 </div>
-              </div>
-              <div class="instructors__slide slide-instructors swiper-slide">
-                <div class="slide-instructors__content">
-                  <div class="slide-instructors__image">
-                    <picture>
-                      <source type="image/webp" srcset="./img/instructor-5.webp 1x, ./img/instructor-5@2x.webp 2x">
-                      <img class="slide-instructors__img" src="./img/instructor-5.jpg" srcset="./img/instructor-5.jpg 1x, ./img/instructor-5@2x.jpg 2x" width="260" height="200" alt="Фото Даниэля Васнецова.">
-                    </picture>
+                <div class="instructors__slide slide-instructors swiper-slide">
+                  <div class="slide-instructors__content">
+                    <div class="slide-instructors__image">
+                      <picture>
+                        <source type="image/webp" srcset="./img/instructor-5.webp 1x, ./img/instructor-5@2x.webp 2x">
+                        <img class="slide-instructors__img" src="./img/instructor-5.jpg" srcset="./img/instructor-5.jpg 1x, ./img/instructor-5@2x.jpg 2x" width="260" height="200" alt="Фото Даниэля Васнецова.">
+                      </picture>
+                    </div>
+                    <h3>Даниэль Васнецов</h3>
+                    <a class="slide-instructors__link" href="#">
+                      <span class="visually-hidden">Слылка на страницу Вконтакте</span>
+                      <svg class="slide-instructors__icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-vk"></use>
+                      </svg>
+                    </a>
+                    <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
                   </div>
-                  <h3>Даниэль Васнецов</h3>
-                  <a class="slide-instructors__link" href="#">
-                    <svg class="slide-instructors__icon" width="14" height="8">
-                      <use href="/__spritemap#sprite-vk"></use>
-                    </svg>
-                  </a>
-                  <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
                 </div>
               </div>
             </div>
+            <div class="instructors__swiper-buttons swiper-buttons">
+              <button class="instructors__button instructors__button--prev swiper-buttons__button swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg class="swiper-buttons__icon-button" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+              </button>
+              <button class="instructors__button instructors__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+                <svg class="swiper-buttons__icon-button" width="14" height="9">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="instructors__swiper-buttons swiper-buttons">
-            <button class="instructors__button instructors__button--prev swiper-buttons__button swiper-button-prev" type="button">
-              <svg class="swiper-buttons__icon-button" width="14" height="9">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </button>
-            <button class="instructors__button instructors__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
-              <svg class="swiper-buttons__icon-button" width="14" height="9">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </button>
+          <div class="training__stages stages">
+            <h3 class="stages__title">Процесс обучения</h3>
+            <ul class="stages__list">
+              <li class="stages__item">
+                <svg class="stages__icon" width="25" height="25">
+                  <use href="/__spritemap#sprite-map"></use>
+                </svg>
+                <p class="stages__description">Изучение спортивного туристского движения</p>
+              </li>
+              <li class="stages__item">
+                <svg class="stages__icon" width="25" height="25">
+                  <use href="/__spritemap#sprite-boots"></use>
+                </svg>
+                <p class="stages__description">Подготовка и техническое снаряжение в походах</p>
+              </li>
+              <li class="stages__item">
+                <svg class="stages__icon" width="25" height="25">
+                  <use href="/__spritemap#sprite-pine-tree"></use>
+                </svg>
+                <p class="stages__description">Лекции по окружающей среде, экологии и гигиене</p>
+              </li>
+              <li class="stages__item">
+                <svg class="stages__icon" width="25" height="25">
+                  <use href="/__spritemap#sprite-mountain"></use>
+                </svg>
+                <p class="stages__description">Разъяснение сложности горных препятствий</p>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="training__stages stages">
-          <h3 class="stages__title">Процесс обучения</h3>
-          <ul class="stages__list">
-            <li class="stages__item">
-              <svg class="stages__icon" width="25" height="25">
-                <use href="/__spritemap#sprite-map"></use>
-              </svg>
-              <p class="stages__description">Изучение спортивного туристского движения</p>
-            </li>
-            <li class="stages__item">
-              <svg class="stages__icon" width="25" height="25">
-                <use href="/__spritemap#sprite-boots"></use>
-              </svg>
-              <p class="stages__description">Подготовка и техническое снаряжение в походах</p>
-            </li>
-            <li class="stages__item">
-              <svg class="stages__icon" width="25" height="25">
-                <use href="/__spritemap#sprite-pine-tree"></use>
-              </svg>
-              <p class="stages__description">Лекции по окружающей среде, экологии и гигиене</p>
-            </li>
-            <li class="stages__item">
-              <svg class="stages__icon" width="25" height="25">
-                <use href="/__spritemap#sprite-mountain"></use>
-              </svg>
-              <p class="stages__description">Разъяснение сложности горных препятствий</p>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="about" data-test="about" id="about">
@@ -457,7 +468,7 @@
             <span class="about__title-shadow title__shadow" aria-disabled="true">О нас</span>
           </div>
           <h3>История компании</h3>
-          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить.<br> Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
           <h3>Наша цель</h3>
           <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы. При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в приятной компании.</p>
         </div>
@@ -506,7 +517,7 @@
                   </div>
                   <div class="slide-reviews__info">
                     <div class="slide-reviews__text">
-                      <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!</p>
+                      <p>Хороший полноценный поход<br> с разнообразными локациями. В начале дорога идёт по лыжне, далее прошли мимо полигона, по болотам, у озёр и лесных ручьёв, остатков дач конца 19 века. Было очень интересно!</p>
                       <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам. Всем советую этот тур.</p>
                     </div>
                     <h3 class="slide-reviews__name">Иван Соловьёв</h3>
@@ -562,11 +573,13 @@
           </div>
           <div class="reviews__buttons swiper-buttons">
             <button class="reviews__button reviews__button--prev swiper-buttons__button swiper-button-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
               <svg class="swiper-buttons__icon-button" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
             </button>
             <button class="reviews__button reviews__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
               <svg class="swiper-buttons__icon-button" width="14" height="9">
                 <use href="/__spritemap#sprite-arrow"></use>
               </svg>
@@ -574,56 +587,90 @@
           </div>
         </div>
       </section>
-      <section class="adv wrapper" data-test="adv" id="adv">
-        <div class="adv__title-conteiner title">
-          <h2 class="adv__title title__text">Преимущества</h2>
-          <span class="adv__title-shadow title__shadow" aria-disabled="true">Преимущества</span>
-        </div>
-        <div class="adv__conteiner">
-          <ul class="adv__list">
-            <li class="adv__item">
-              <div class="adv__content adv__content--safety">
-                <h3>Безопасность</h3>
-                <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
-              </div>
-            </li>
-            <li class="adv__item">
-              <div class="adv__content adv__content--expertise">
-                <h3>Экспертиза и знания</h3>
-                <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
-              </div>
-            </li>
-            <li class="adv__item">
-              <div class="adv__content adv__content--equipment">
-                <h3>Оборудование и снаряжение</h3>
-                <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
-              </div>
-            </li>
-            <li class="adv__item">
-              <div class="adv__content adv__content--routes">
-                <h3>Индивидуальные маршруты</h3>
-                <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
-              </div>
-            </li>
-            <li class="adv__item">
-              <div class="adv__content adv__content--nature">
-                <h3>Бережное отношение к природе</h3>
-                <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="adv__buttons swiper-buttons">
-          <button class="adv__button adv__button--prev swiper-buttons__button swiper-button-prev" type="button">
-            <svg class="swiper-buttons__icon-button" width="14" height="9">
-              <use href="/__spritemap#sprite-arrow"></use>
-            </svg>
-          </button>
-          <button class="adv__button adv__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
-            <svg class="swiper-buttons__icon-button" width="14" height="9">
-              <use href="/__spritemap#sprite-arrow"></use>
-            </svg>
-          </button>
+      <section class="adv" data-test="adv" id="adv">
+        <div class="adv__wrapper wrapper">
+          <div class="adv__title-conteiner title">
+            <h2 class="adv__title title__text">Преимущества</h2>
+            <span class="adv__title-shadow title__shadow" aria-disabled="true">Преимущества</span>
+          </div>
+          <div class="adv__conteiner">
+            <ul class="adv__list">
+              <li class="adv__item">
+                <div class="adv__content adv__content--safety">
+                  <h3>Безопасность</h3>
+                  <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+                </div>
+              </li>
+              <li class="adv__item">
+                <div class="adv__content adv__content--expertise">
+                  <h3>Экспертиза и знания</h3>
+                  <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности.<br> Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+                </div>
+              </li>
+              <li class="adv__item">
+                <div class="adv__content adv__content--equipment">
+                  <h3>Оборудование и снаряжение</h3>
+                  <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия.<br>Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+                </div>
+              </li>
+              <li class="adv__item">
+                <div class="adv__content adv__content--routes">
+                  <h3>Индивидуальные маршруты</h3>
+                  <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+                </div>
+              </li>
+              <li class="adv__item">
+                <div class="adv__content adv__content--nature">
+                  <h3>Бережное отношение<br>к природе</h3>
+                  <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+                </div>
+              </li>
+              <li class="adv__item adv__item--double">
+                <div class="adv__content adv__content--safety">
+                  <h3>Безопасность</h3>
+                  <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
+                </div>
+              </li>
+              <li class="adv__item adv__item--double">
+                <div class="adv__content adv__content--expertise">
+                  <h3>Экспертиза и знания</h3>
+                  <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
+                </div>
+              </li>
+              <li class="adv__item adv__item--double">
+                <div class="adv__content adv__content--equipment">
+                  <h3>Оборудование и снаряжение</h3>
+                  <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия.<br>Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
+                </div>
+              </li>
+              <li class="adv__item adv__item--double">
+                <div class="adv__content adv__content--routes">
+                  <h3>Индивидуальные маршруты</h3>
+                  <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
+                </div>
+              </li>
+              <li class="adv__item adv__item--double">
+                <div class="adv__content adv__content--nature">
+                  <h3>Бережное отношение<br>к природе</h3>
+                  <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="adv__buttons swiper-buttons">
+            <button class="adv__button adv__button--prev swiper-buttons__button swiper-button-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg class="swiper-buttons__icon-button" width="14" height="9">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </button>
+            <button class="adv__button adv__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg class="swiper-buttons__icon-button" width="14" height="9">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section class="gallery wrapper" data-test="gallery" id="gallery">
@@ -632,24 +679,50 @@
             <h2 class="gallery__title title__text">Фотогалерея</h2>
             <span class="gallery__title-shadow title__shadow" aria-disabled="true">Фотогалерея</span>
           </div>
-          <p>Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+          <p>Добавляйте фото в с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
         </div>
         <div class="gallery__swiper swiper">
           <div class="gallery__wrapper swiper-wrapper">
             <div class="gallery__slide swiper-slide">
               <div class="gallery__content">
-                <img class="gallery__image" src="./img/gallery-photo-1.jpg" srcset="./img/gallery-photo-1.jpg 1x, ./img/gallery-photo-1@2x.jpg 2x" width="158" height="266" alt="Фото из путешествий.">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/gallery-photo-1.webp 1x, ./img/gallery-photo-1@2x.webp 2x" width="284" height="463">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery-photo-tablet-1.webp 1x, ./img/gallery-photo-tablet-1@2x.webp 2x" width="253" height="418">
+                  <source type="image/webp" srcset="./img/gallery-photo-mobile-1.webp 1x, ./img/gallery-photo-mobile-1@2x.webp 2x" width="157" height="266">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/gallery-photo-1.jpg 1x, ./img/gallery-photo-1@2x.jpg 2x" width="284" height="463">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/gallery-photo-tablet-1.jpg 1x, ./img/gallery-photo-tablet-1@2x.jpg 2x" width="253" height="418">
+                  <img class="gallery__image" src="./img/gallery-photo-mobile-1.jpg" srcset="./img/gallery-photo-mobile-1.jpg 1x, ./img/gallery-photo-mobile-1@2x.jpg 2x" width="158" height="266" alt="Фото из путешествий.">
+                </picture>
               </div>
             </div>
             <div class="gallery__slide swiper-slide">
               <div class="gallery__content gallery__content--double">
-                <img class="gallery__image" src="./img/gallery-photo-2.jpg" srcset="./img/gallery-photo-2.jpg 1x, ./img/gallery-photo-2@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
-                <img class="gallery__image" src="./img/gallery-photo-3.jpg" srcset="./img/gallery-photo-3.jpg 1x, ./img/gallery-photo-3@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/gallery-photo-2.webp 1x, ./img/gallery-photo-2@2x.webp 2x" width="284" height="223">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery-photo-tablet-2.webp 1x, ./img/gallery-photo-tablet-2@2x.webp 2x" width="252" height="223">
+                  <source type="image/webp" srcset="./img/gallery-photo-mobile-2.webp 1x, ./img/gallery-photo-mobile-2@2x.webp 2x" width="157" height="131">
+                  <source type="image/jpeg" media="(min-width: 1440px)" srcset="./img/gallery-photo-2.jpg 1x, ./img/gallery-photo-2@2x.jpg 2x" width="284" height="223">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/gallery-photo-tablet-2.jpg 1x, ./img/gallery-photo-tablet-2@2x.jpg 2x" width="252" height="223">
+                  <img class="gallery__image" src="./img/gallery-photo-mobile-2.jpg" srcset="./img/gallery-photo-mobile-2.jpg 1x, ./img/gallery-photo-mobile-2@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1140px)" srcset="./img/gallery-photo-3.webp 1x, ./img/gallery-photo-3@2x.webp 2x" width="284" height="223">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/gallery-photo-tablet-3.webp 1x, ./img/gallery-photo-tablet-3@2x.webp 2x" width="253" height="223">
+                  <source type="image/webp" srcset="./img/gallery-photo-mobile-3.webp 1x, ./img/gallery-photo-mobile-3@2x.webp 2x" width="157" height="131">
+                  <source type="image/jpeg" media="(min-width: 1140px)" srcset="./img/gallery-photo-3.jpg 1x, ./img/gallery-photo-3@2x.jpg 2x" width="284" height="223">
+                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/gallery-photo-tablet-3.jpg 1x, ./img/gallery-photo-tablet-3@2x.jpg 2x" width="252" height="223">
+                  <img class="gallery__image" src="./img/gallery-photo-mobile-3.jpg" srcset="./img/gallery-photo-mobile-3.jpg 1x, ./img/gallery-photo-mobile-3@2x.jpg 2x" width="157" height="131" alt="Фото из путешествий.">
+                </picture>
               </div>
             </div>
             <div class="gallery__slide swiper-slide">
               <div class="gallery__content">
-                <img class="gallery__image" src="./img/gallery-photo-4.jpg" srcset="./img/gallery-photo-4.jpg 1x, ./img/gallery-photo-4@2x.jpg 2x" width="158" height="266" alt="Фото из путешествий.">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1140px)" srcset="./img/gallery-photo-4.webp 1x, ./img/gallery-photo-4@2x.webp 2x" width="284" height="463">
+                  <source type="image/webp" srcset="./img/gallery-photo-tablet-4.webp 1x, ./img/gallery-photo-tablet-4@2x.webp 2x" width="158" height="266">
+                  <source type="image/jpeg" media="(min-width: 1140px)" srcset="./img/gallery-photo-4.webp 1x, ./img/gallery-photo-4@2x.webp 2x" width="284" height="463">
+                  <img class="gallery__image" src="./img/gallery-photo-tablet-4.jpg" srcset="./img/gallery-photo-tablet-4.jpg 1x, ./img/gallery-photo-tablet-4@2x.jpg 2x" width="158" height="266" alt="Фото из путешествий.">
+                </picture>
               </div>
             </div>
             <div class="gallery__slide swiper-slide">
@@ -667,11 +740,13 @@
         </div>
         <div class="gallery__buttons swiper-buttons">
           <button class="gallery__button gallery__button--prev swiper-buttons__button swiper-button-prev" type="button">
+            <span class="visually-hidden">Предыдущий слайд</span>
             <svg class="swiper-buttons__icon-button" width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
           </button>
           <button class="gallery__button gallery__button--next swiper-buttons__button swiper-buttons__button--next swiper-button-next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
             <svg class="swiper-buttons__icon-button" width="14" height="9">
               <use href="/__spritemap#sprite-arrow"></use>
             </svg>
@@ -679,16 +754,17 @@
         </div>
       </section>
       <section class="form-conteiner" data-test="form" id="form">
+        <!-- placeholder заменит label в случае добавления -->
         <div class="form-conteiner__content">
           <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется <br>с вами для консультации.</p>
           <form class="form-conteiner__item form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__item">
-              <input class="form__input" type="tel" name="phone" id="tel" placeholder="88000000000" value="" pattern="[0-9]{11}" required >
+              <input class="form__input" type="tel" name="phone" id="tel" pattern="[0-9]{11}" required >
               <label class="form__label" for="tel">Телефон</label>
             </div>
             <div class="form__item">
-              <input class="form__input" type="email" name="email" id="email" placeholder="name@mail.ru" value="" pattern="^\S+@\S+\.\S+$" required>
+              <input class="form__input" type="email" name="email" id="email" pattern="^\S+@\S+\.\S+$" required>
               <label class="form__label" for="email">Email</label>
             </div>
             <button class="form__button" type="submit">Отправить</button>
@@ -702,7 +778,7 @@
               <h2 class="contacts__title title__text">Контакты</h2>
               <span class="contacts__title-shadow title__shadow" aria-disabled="true">Контакты</span>
             </div>
-            <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+            <p>Свяжитесь с нами любым удобным для вас способом или&nbsp;приходите<br> к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
             <ul class="contacts__list">
               <li class="contacts__item contacts__item--phone">
                 <h3 class="contacts__subtitle">Телефон</h3>
@@ -729,12 +805,15 @@
             </picture>
           </div>
         </section>
-        <section class="footer__content">
+        <div class="footer__content">
           <div class="footer__wrapper wrapper">
-            <svg class="footer__logo" width="142" height="42">
-              <use href="/__spritemap#sprite-logo"></use>
-            </svg>
-            <div class="footer_nav nav">
+            <a class="footer__logo-link" href="#">
+              <span class="visually-hidden">Слылка на главную</span>
+              <svg class="footer__logo" width="142" height="42">
+                <use href="/__spritemap#sprite-logo"></use>
+              </svg>
+            </a>
+            <div class="footer__nav nav">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link" href="#tours">Туры</a>
@@ -761,7 +840,7 @@
               <li class="socials__item">
                 <a class="socials__link" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Группа Вконтакте.</span>
-                  <svg class="socials__icon" width="14" height="14">
+                  <svg class="socials__icon" width="17" height="9">
                     <use href="/__spritemap#sprite-vk"></use>
                   </svg>
                 </a>
@@ -769,7 +848,7 @@
               <li class="socials__item">
                 <a class="socials__link" href="https://ok.ru/">
                   <span class="visually-hidden">Страница в Одноклассниках.</span>
-                  <svg class="socials__icon" width="9" height="16">
+                  <svg class="socials__icon" width="10" height="16">
                     <use href="/__spritemap#sprite-ok"></use>
                   </svg>
                 </a>
@@ -777,7 +856,7 @@
               <li class="socials__item">
                 <a class="socials__link" href="https://www.reddit.com/">
                   <span class="visually-hidden">Страница Реддит.</span>
-                  <svg class="socials__icon" width="14" height="14">
+                  <svg class="socials__icon" width="15" height="15">
                     <use href="/__spritemap#sprite-reddit"></use>
                   </svg>
                 </a>
@@ -785,7 +864,7 @@
             </ul>
             <a class="footer__confidentiality" href="#">Политика конфиденциальности</a>
           </div>
-        </section>
+        </div>
       </footer>
     </main>
     <script type="module" src="js/main.js"></script>

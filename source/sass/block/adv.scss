@@ -1,7 +1,53 @@
 .adv {
+  position: relative;
+  overflow-x: hidden;
+
+  @media (min-width: $width-tablet) and (width <= 1439px) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -138px;
+      top: 263px;
+      width: 1200px;
+      height: 400px;
+      background-image:
+        image-set(
+          url("../../img/clouds-3@2x.webp") type("image/webp") 2x,
+          url("../../img/clouds-3.webp") type("image/webp") 1x,
+          url("../../img/clouds-3@2x.png") type("image/png") 2x,
+          url("../../img/clouds-3.png") type("image/png") 1x,
+        );
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -204px;
+      bottom: 244px;
+      width: 788px;
+      height: 263px;
+      background-image:
+        image-set(
+          url("../../img/clouds-2@2x.webp") type("image/webp") 2x,
+          url("../../img/clouds-2.webp") type("image/webp") 1x,
+          url("../../img/clouds-2@2x.png") type("image/png") 2x,
+          url("../../img/clouds-2.png") type("image/png") 1x,
+        );
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.adv__wrapper {
+  @media (width <= 767px) {
+    padding-top: 21px;
+  }
+
   @media (min-width: $width-desktop) {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 106px;
   }
 }
 
@@ -15,6 +61,12 @@
   transform: translateX(-50%);
 }
 
+.adv__title {
+  @media (min-width: $width-desktop) {
+    padding-top: 29px;
+  }
+}
+
 .adv__list {
   position: relative;
   display: flex;
@@ -22,7 +74,7 @@
   gap: 15px;
   padding: 0;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 19px;
   list-style: none;
 
   @media (min-width: $width-tablet) {
@@ -33,44 +85,9 @@
     padding-top: 50px;
   }
 
-  @media (min-width: $width-tablet) and (max-width: 1439px) {
-    &::before {
-      content: "";
-      position: absolute;
-      left: -55%;
-      top: 7%;
-      width: 1200px;
-      height: 400px;
-      background-image: image-set(
-        url("../../img/clouds-3@2x.webp") type("image/webp") 2x,
-        url("../../img/clouds-3.webp") type("image/webp") 1x,
-        url("../../img/clouds-3@2x.png") type("image/png") 2x,
-        url("../../img/clouds-3.png") type("image/png") 1x,
-      );
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: -30%;
-      bottom: 20%;
-      width: 788px;
-      height: 263px;
-      background-image: image-set(
-        url("../../img/clouds-2@2x.webp") type("image/webp") 2x,
-        url("../../img/clouds-2.webp") type("image/webp") 1x,
-        url("../../img/clouds-2@2x.png") type("image/png") 2x,
-        url("../../img/clouds-2.png") type("image/png") 1x,
-      );
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-
   @media (min-width: $width-desktop) {
     display: block;
+    justify-content: flex-start;
     gap: 0;
     padding-bottom: 50px;
     flex-wrap: nowrap;
@@ -95,7 +112,7 @@
 
 .adv__content {
   position: relative;
-  padding: 82px 10px 20px;
+  padding: 81px 9px 19px;
   text-align: center;
 
   &::before {
@@ -103,7 +120,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 20px;
+    top: 19px;
     width: 42px;
     height: 42px;
     padding: 8px;
@@ -113,18 +130,26 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding: 103px 20px 30px;
+    min-height: 338px;
+    padding: 103px 19px 29px;
 
-    &::before{
-      top: 30px;
+    &::before {
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+      top: 29px;
     }
   }
 
   @media (min-width: $width-desktop) {
-    padding: 124px 20px 40px;
+    padding: 123px 20px 40px;
+    min-width: 378px;
+    max-width: 380px;
 
-    &::before{
-      top: 40px;
+    &::before {
+      width: 54px;
+      height: 54px;
+      top: 39px;
     }
   }
 }
@@ -159,20 +184,41 @@
   @media (min-width: $width-tablet) {
     font-size: 16px;
     line-height: 16px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $width-desktop) {
     font-size: 18px;
     line-height: 18px;
+    padding-bottom: 15px;
   }
 }
 
 .adv__content p {
   margin: 0;
+  font-size: 12px;
   line-height: 18px;
 
   @media (min-width: $width-tablet) {
+    font-size: 14px;
     line-height: 22px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-height: 132px;
+    overflow-y: auto;
+  }
+}
+
+.adv__content br {
+  @media (min-width: $width-desktop) {
+    display: none;
+  }
+}
+
+.adv__content--expertise br {
+  @media (min-width: $width-tablet) {
+    display: none;
   }
 }
 
@@ -183,5 +229,11 @@
     position: relative;
     display: flex;
     margin: 0 auto;
+  }
+}
+
+.adv__item--double {
+  @media (width <= 1439px) {
+    display: none;
   }
 }

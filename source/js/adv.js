@@ -13,9 +13,9 @@ const initSwiperAdv = () => {
     simulateTouch: false,
     slidesPerView: 'auto',
     slidesPerGroup: 2,
-    loopAddBlankSlides: false,
-    loopAdditionalSlides: 0,
+    initialSlide: 2,
     spaceBetween: 30,
+    centeredSlides: true,
 
     navigation: {
       nextEl: '.adv__button--next',

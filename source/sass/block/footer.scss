@@ -2,11 +2,11 @@
   padding: 20px 0;
 
   @media (min-width: $width-tablet) {
-    padding-top: 40px;
+    padding-top: 11px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 100px;
+    padding-top: 107px;
     padding-bottom: 32px;
   }
 }
@@ -20,7 +20,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 32px;
+    padding-top: 40px;
   }
 }
 
@@ -28,32 +28,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 23px;
+  gap: 19px;
   padding-top: 0;
   padding-bottom: 0;
 
   @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: auto auto;
-    grid-row: auto auto auto;
+    grid-template-rows: auto auto auto;
+    row-gap: 29px;
+    column-gap: 38px;
   }
 
-  @media (min-width: $width-tablet) {
-    grid-template-columns: auto auto 200px;
+  @media (min-width: $width-desktop) {
+    grid-template-columns: auto auto 153px;
+    justify-content: center;
+    padding: 0 120px 0 147px;
+    row-gap: 21px;
   }
 }
 
 .footer__logo {
   fill: $color-primary;
 
+  &:hover {
+    fill: $color-blue;
+    opacity: 0.3;
+  }
+
+  &:active {
+    fill: #1c3374;
+    opacity: 1;
+  }
+
   @media (min-width: $width-tablet) {
     width: 142px;
     height: 42px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 200px;
-    height: 60px;
   }
 }
 
@@ -63,7 +73,7 @@
   line-height: 18px;
   color: $color-primary;
   text-decoration: none;
-  margin-left: 55px;
+  margin-left: 8px;
 
   &:hover {
     color: rgba(2, 102, 193, 0.1);
@@ -78,9 +88,14 @@
     color: #1c3374;
   }
 
-  @media (max-width: 1439px) {
+  @media (width <= 1439px) {
     display: none;
   }
+}
+
+.footer__logo-link.is-disabled,
+.footer__logo-link:not([href]) {
+  pointer-events: none;
 }
 
 .footer__phone.is-disabled,
@@ -93,6 +108,7 @@
 
 
 .footer__confidentiality {
+  padding-top: 3px;
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
@@ -115,15 +131,26 @@
 
   @media (min-width: $width-tablet) {
     margin: 0 auto;
-    grid-column: 1 / -1;
+    padding-top: 5px;
+    grid-column: 1 / 3;
     grid-row: 3 / 4;
+    width: 200px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 2 / 3;
+    width: 215px;
   }
 }
 
-
 .footer__socials {
   @media (min-width: $width-tablet) {
-    grid-column: 1 / -1;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 }

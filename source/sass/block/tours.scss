@@ -1,13 +1,16 @@
 .tours {
+  position: relative;
+  overflow-x: clip;
   z-index: 15;
-  background-image: image-set(
+  background-image:
+    image-set(
       url("../../img/clouds-mobile@2x.webp") type("image/webp") 2x,
       url("../../img/clouds-mobile.webp") type("image/webp") 1x,
       url("../../img/clouds-mobile@2x.png") type("image/png") 2x,
       url("../../img/clouds-mobile.png") type("image/png") 1x
     );
-    background-repeat: no-repeat;
-    background-position: bottom right;
+  background-repeat: no-repeat;
+  background-position: bottom -10px right;
 
   @media (min-width: $width-tablet) {
     background-image: none;
@@ -17,44 +20,75 @@
       width: 602px;
       height: 1130px;
       position: absolute;
-      right: -12%;
-      bottom: -50%;
-      transform: translateY(50%);
-      background-image: image-set(
-        url("../../img/clouds-tablet@2x.webp") type("image/webp") 2x,
-        url("../../img/clouds-tablet.webp") type("image/webp") 1x,
-        url("../../img/clouds-tablet@2x.png") type("image/png") 2x,
-        url("../../img/clouds-tablet.png") type("image/png") 1x
-      );
+      right: 1px;
+      bottom: -141%;
+      background-image:
+        image-set(
+          url("../../img/clouds-tablet@2x.webp") type("image/webp") 2x,
+          url("../../img/clouds-tablet.webp") type("image/webp") 1x,
+          url("../../img/clouds-tablet@2x.png") type("image/png") 2x,
+          url("../../img/clouds-tablet.png") type("image/png") 1x
+        );
       background-repeat: no-repeat;
-      background-position: bottom;
+      background-position: bottom right;
       z-index: -1;
     }
   }
 
   @media (min-width: $width-desktop) {
     &::after {
-      background-image: image-set(
-        url("../../img/clouds-desktop@2x.webp") type("image/webp") 2x,
-        url("../../img/clouds-desktop.webp") type("image/webp") 1x,
-        url("../../img/clouds-desktop@2x.png") type("image/png") 2x,
-        url("../../img/clouds-desktop.png") type("image/png") 1x
-      );
-      background-position: bottom;
+      width: 602px;
+      height: 1630px;
+      background-image:
+        image-set(
+          url("../../img/clouds-desktop@2x.webp") type("image/webp") 2x,
+          url("../../img/clouds-desktop.webp") type("image/webp") 1x,
+          url("../../img/clouds-desktop@2x.png") type("image/png") 2x,
+          url("../../img/clouds-desktop.png") type("image/png") 1x
+        );
+      background-position: top;
       right: 0;
-      bottom: -37%;
+      transform: translateY(50%);
+      bottom: 128px;
     }
+  }
+}
+
+.tours__title {
+  padding-top: 19px;
+  padding-bottom: 14px;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 15px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 23px;
   }
 }
 
 .tours__wrapper {
   position: relative;
+
+  @media (min-width: $width-tablet) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
 }
+
 .tours__swiper {
   margin: 25px 0;
 
+  @media (min-width: $width-tablet) {
+    margin: 21px 0 26px;
+  }
+
   @media (min-width: $width-desktop) {
-    margin: 53px 0;
+    margin: 36px 0 54px;
   }
 }
 
@@ -74,11 +108,10 @@
   display: flex;
   gap: 12px;
   width: max-content;
-  margin: 0 auto;
   align-items: center;
   margin: 0 auto;
-  padding: 10px 10px ;
-  font-family: "Montserrat", sans-serif;
+  padding: 10px;
+  font-family: "Montserrat", monospace;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
@@ -103,12 +136,11 @@
   @media (min-width: $width-tablet) {
     font-size: 16px;
     line-height: 16px;
+    padding: 10px 9px 10px 12px;
   }
 }
 
 .tours__icon-link {
-  width: 6px;
-  height: 12px;
   stroke: #2d383f;
 }
 
