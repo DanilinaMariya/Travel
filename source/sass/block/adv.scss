@@ -12,10 +12,10 @@
       height: 400px;
       background-image:
         image-set(
-          url("../../img/clouds-3@2x.webp") type("image/webp") 2x,
-          url("../../img/clouds-3.webp") type("image/webp") 1x,
-          url("../../img/clouds-3@2x.png") type("image/png") 2x,
-          url("../../img/clouds-3.png") type("image/png") 1x,
+          url("../img/clouds-3@2x.webp") type("image/webp") 2x,
+          url("../img/clouds-3.webp") type("image/webp") 1x,
+          url("../img/clouds-3@2x.png") type("image/png") 2x,
+          url("../img/clouds-3.png") type("image/png") 1x,
         );
       background-repeat: no-repeat;
     }
@@ -29,10 +29,10 @@
       height: 263px;
       background-image:
         image-set(
-          url("../../img/clouds-2@2x.webp") type("image/webp") 2x,
-          url("../../img/clouds-2.webp") type("image/webp") 1x,
-          url("../../img/clouds-2@2x.png") type("image/png") 2x,
-          url("../../img/clouds-2.png") type("image/png") 1x,
+          url("../img/clouds-2@2x.webp") type("image/webp") 2x,
+          url("../img/clouds-2.webp") type("image/webp") 1x,
+          url("../img/clouds-2@2x.png") type("image/png") 2x,
+          url("../img/clouds-2.png") type("image/png") 1x,
         );
       background-repeat: no-repeat;
     }
@@ -138,6 +138,7 @@
       height: 48px;
       padding: 12px;
       top: 29px;
+      background-size: 24px 24px;
     }
   }
 
@@ -150,28 +151,29 @@
       width: 54px;
       height: 54px;
       top: 39px;
+      background-size: 30px 30px;
     }
   }
 }
 
 .adv__content--safety::before {
-  background-image: url("../../img/safety.svg");
+  background-image: url("../img/safety.svg");
 }
 
 .adv__content--expertise::before {
-  background-image: url("../../img/expertise.svg");
+  background-image: url("../img/expertise.svg");
 }
 
 .adv__content--equipment::before {
-  background-image: url("../../img/equipment.svg");
+  background-image: url("../img/equipment.svg");
 }
 
 .adv__content--routes::before {
-  background-image: url("../../img/routes.svg");
+  background-image: url("../img/routes.svg");
 }
 
 .adv__content--nature::before {
-  background-image: url("../../img/nature.svg");
+  background-image: url("../img/nature.svg");
 }
 
 .adv__content h3 {

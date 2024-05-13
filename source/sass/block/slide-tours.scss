@@ -26,40 +26,40 @@
 .slide-tours:nth-child(1) {
   background-image:
     image-set(
-      url("../../img/slide-tours-1@2x.webp") type("image/webp") 2x,
-      url("../../img/slide-tours-1.webp") type("image/webp") 1x,
-      url("../../img/slide-tours-1@2x.jpg") type("image/jpg") 2x,
-      url("../../img/slide-tours-1.jpg") type("image/jpg") 1x
+      url("../img/slide-tours-1@2x.webp") type("image/webp") 2x,
+      url("../img/slide-tours-1.webp") type("image/webp") 1x,
+      url("../img/slide-tours-1@2x.jpg") type("image/jpg") 2x,
+      url("../img/slide-tours-1.jpg") type("image/jpg") 1x
     );
 }
 
 .slide-tours:nth-child(2) {
   background-image:
     image-set(
-      url("../../img/slide-tours-2@2x.webp") type("image/webp") 2x,
-      url("../../img/slide-tours-2.webp") type("image/webp") 1x,
-      url("../../img/slide-tours-2@2x.jpg") type("image/jpg") 2x,
-      url("../../img/slide-tours-2.jpg") type("image/jpg") 1x
+      url("../img/slide-tours-2@2x.webp") type("image/webp") 2x,
+      url("../img/slide-tours-2.webp") type("image/webp") 1x,
+      url("../img/slide-tours-2@2x.jpg") type("image/jpg") 2x,
+      url("../img/slide-tours-2.jpg") type("image/jpg") 1x
     );
 }
 
 .slide-tours:nth-child(3) {
   background-image:
     image-set(
-      url("../../img/slide-tours-3@2x.webp") type("image/webp") 2x,
-      url("../../img/slide-tours-3.webp") type("image/webp") 1x,
-      url("../../img/slide-tours-3@2x.jpg") type("image/jpg") 2x,
-      url("../../img/slide-tours-3.jpg") type("image/jpg") 1x
+      url("../img/slide-tours-3@2x.webp") type("image/webp") 2x,
+      url("../img/slide-tours-3.webp") type("image/webp") 1x,
+      url("../img/slide-tours-3@2x.jpg") type("image/jpg") 2x,
+      url("../img/slide-tours-3.jpg") type("image/jpg") 1x
     );
 }
 
 .slide-tours:nth-child(4) {
   background-image:
     image-set(
-      url("../../img/slide-tours-4@2x.webp") type("image/webp") 2x,
-      url("../../img/slide-tours-4.webp") type("image/webp") 1x,
-      url("../../img/slide-tours-4@2x.jpg") type("image/jpg") 2x,
-      url("../../img/slide-tours-4.jpg") type("image/jpg") 1x
+      url("../img/slide-tours-4@2x.webp") type("image/webp") 2x,
+      url("../img/slide-tours-4.webp") type("image/webp") 1x,
+      url("../img/slide-tours-4@2x.jpg") type("image/jpg") 2x,
+      url("../img/slide-tours-4.jpg") type("image/jpg") 1x
     );
 }
 
@@ -87,7 +87,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    background-image: url("../../img/site.svg");
+    background-image: url("../img/site.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -133,11 +133,11 @@
 }
 
 .slide-tours__days::before {
-  background-image: url("../../img/days.svg");
+  background-image: url("../img/days.svg");
 }
 
 .slide-tours__nights::before {
-  background-image: url("../../img/nights.svg");
+  background-image: url("../img/nights.svg");
 }
 
 .slide-tours__title {

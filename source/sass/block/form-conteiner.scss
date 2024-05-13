@@ -6,10 +6,10 @@
   min-height: 638px;
   background-image:
     image-set(
-      url("../../img/form_mobile@2x.webp") 2x,
-      url("../../img/form_mobile.webp") 1x,
-      url("../../img/form_mobile@2x.jpg") 2x,
-      url("../../img/form_mobile.jpg") 1x
+      url("../img/form_mobile@2x.webp") 2x,
+      url("../img/form_mobile.webp") 1x,
+      url("../img/form_mobile@2x.jpg") 2x,
+      url("../img/form_mobile.jpg") 1x
     );
   background-size: 122% 100%;
   background-repeat: no-repeat;
@@ -21,10 +21,10 @@
     align-items: flex-start;
     background-image:
       image-set(
-        url("../../img/form_tablet@2x.webp") 2x,
-        url("../../img/form_tablet.webp") 1x,
-        url("../../img/form_tablet@2x.jpg") 2x,
-        url("../../img/form_tablet.jpg") 1x
+        url("../img/form_tablet@2x.webp") 2x,
+        url("../img/form_tablet.webp") 1x,
+        url("../img/form_tablet@2x.jpg") 2x,
+        url("../img/form_tablet.jpg") 1x
       );
     background-size: cover;
   }
@@ -35,10 +35,10 @@
     align-items: flex-start;
     background-image:
       image-set(
-        url("../../img/form_desktop@2x.webp") 2x,
-        url("../../img/form_desktop.webp") 1x,
-        url("../../img/form_desktop@2x.jpg") 2x,
-        url("../../img/form_desktop.jpg") 1x
+        url("../img/form_desktop@2x.webp") 2x,
+        url("../img/form_desktop.webp") 1x,
+        url("../img/form_desktop@2x.jpg") 2x,
+        url("../img/form_desktop.jpg") 1x
       );
   }
 }

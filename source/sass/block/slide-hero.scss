@@ -25,10 +25,10 @@
 .slide-hero--first {
   background-image:
     image-set(
-      url("../../img/mobile-hero-slide-1@2x.webp") type("image/webp") 2x,
-      url("../../img/mobile-hero-slide-1.webp") type("image/webp") 1x,
-      url("../../img/mobile-hero-slide-1@2x.jpg") type("image/jpg") 2x,
-      url("../../img/mobile-hero-slide-1.jpg") type("image/jpg") 1x
+      url("../img/mobile-hero-slide-1@2x.webp") type("image/webp") 2x,
+      url("../img/mobile-hero-slide-1.webp") type("image/webp") 1x,
+      url("../img/mobile-hero-slide-1@2x.jpg") type("image/jpg") 2x,
+      url("../img/mobile-hero-slide-1.jpg") type("image/jpg") 1x
     );
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -37,20 +37,20 @@
   @media (min-width: $width-tablet) {
     background-image:
       image-set(
-        url("../../img/tablet-hero-slide-1@2x.webp") type("image/webp") 2x,
-        url("../../img/tablet-hero-slide-1.webp") type("image/webp") 1x,
-        url("../../img/tablet-hero-slide-1@2x.jpg") type("image/jpg") 2x,
-        url("../../img/tablet-hero-slide-1.jpg") type("image/jpg") 1x
+        url("../img/tablet-hero-slide-1@2x.webp") type("image/webp") 2x,
+        url("../img/tablet-hero-slide-1.webp") type("image/webp") 1x,
+        url("../img/tablet-hero-slide-1@2x.jpg") type("image/jpg") 2x,
+        url("../img/tablet-hero-slide-1.jpg") type("image/jpg") 1x
       );
   }
 
   @media (min-width: $width-desktop) {
     background-image:
       image-set(
-        url("../../img/desktop-hero-slide-1@2x.webp") type("image/webp") 2x,
-        url("../../img/desktop-hero-slide-1.webp") type("image/webp") 1x,
-        url("../../img/desktop-hero-slide-1@2x.jpg") type("image/jpg") 2x,
-        url("../../img/desktop-hero-slide-1.jpg") type("image/jpg") 1x
+        url("../img/desktop-hero-slide-1@2x.webp") type("image/webp") 2x,
+        url("../img/desktop-hero-slide-1.webp") type("image/webp") 1x,
+        url("../img/desktop-hero-slide-1@2x.jpg") type("image/jpg") 2x,
+        url("../img/desktop-hero-slide-1.jpg") type("image/jpg") 1x
       );
   }
 }
@@ -58,10 +58,10 @@
 .slide-hero--second {
   background-image:
     image-set(
-      url("../../img/mobile-hero-slide-2@2x.webp") type("image/webp") 2x,
-      url("../../img/mobile-hero-slide-2.webp") type("image/webp") 1x,
-      url("../../img/mobile-hero-slide-2@2x.jpg") type("image/jpg") 2x,
-      url("../../img/mobile-hero-slide-2.jpg") type("image/jpg") 1x
+      url("../img/mobile-hero-slide-2@2x.webp") type("image/webp") 2x,
+      url("../img/mobile-hero-slide-2.webp") type("image/webp") 1x,
+      url("../img/mobile-hero-slide-2@2x.jpg") type("image/jpg") 2x,
+      url("../img/mobile-hero-slide-2.jpg") type("image/jpg") 1x
     );
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -70,20 +70,20 @@
   @media (min-width: $width-tablet) {
     background-image:
       image-set(
-        url("../../img/tablet-hero-slide-2@2x.webp") type("image/webp") 2x,
-        url("../../img/tablet-hero-slide-2.webp") type("image/webp") 1x,
-        url("../../img/tablet-hero-slide-2@2x.jpg") type("image/jpg") 2x,
-        url("../../img/tablet-hero-slide-2.jpg") type("image/jpg") 1x
+        url("../img/tablet-hero-slide-2@2x.webp") type("image/webp") 2x,
+        url("../img/tablet-hero-slide-2.webp") type("image/webp") 1x,
+        url("../img/tablet-hero-slide-2@2x.jpg") type("image/jpg") 2x,
+        url("../img/tablet-hero-slide-2.jpg") type("image/jpg") 1x
       );
   }
 
   @media (min-width: $width-desktop) {
     background-image:
       image-set(
-        url("../../img/desktop-hero-slide-2@2x.webp") type("image/webp") 2x,
-        url("../../img/desktop-hero-slide-2.webp") type("image/webp") 1x,
-        url("../../img/desktop-hero-slide-2@2x.jpg") type("image/jpg") 2x,
-        url("../../img/desktop-hero-slide-2.jpg") type("image/jpg") 1x
+        url("../img/desktop-hero-slide-2@2x.webp") type("image/webp") 2x,
+        url("../img/desktop-hero-slide-2.webp") type("image/webp") 1x,
+        url("../img/desktop-hero-slide-2@2x.jpg") type("image/jpg") 2x,
+        url("../img/desktop-hero-slide-2.jpg") type("image/jpg") 1x
       );
   }
 }
@@ -91,10 +91,10 @@
 .slide-hero--third {
   background-image:
     image-set(
-      url("../../img/mobile-hero-slide-3@2x.webp") type("image/webp") 2x,
-      url("../../img/mobile-hero-slide-3.webp") type("image/webp") 1x,
-      url("../../img/mobile-hero-slide-3@2x.jpg") type("image/jpg") 2x,
-      url("../../img/mobile-hero-slide-3.jpg") type("image/jpg") 1x
+      url("../img/mobile-hero-slide-3@2x.webp") type("image/webp") 2x,
+      url("../img/mobile-hero-slide-3.webp") type("image/webp") 1x,
+      url("../img/mobile-hero-slide-3@2x.jpg") type("image/jpg") 2x,
+      url("../img/mobile-hero-slide-3.jpg") type("image/jpg") 1x
     );
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -103,20 +103,20 @@
   @media (min-width: $width-tablet) {
     background-image:
       image-set(
-        url("../../img/tablet-hero-slide-3@2x.webp") type("image/webp") 2x,
-        url("../../img/tablet-hero-slide-3.webp") type("image/webp") 1x,
-        url("../../img/tablet-hero-slide-3@2x.jpg") type("image/jpg") 2x,
-        url("../../img/tablet-hero-slide-3.jpg") type("image/jpg") 1x
+        url("../img/tablet-hero-slide-3@2x.webp") type("image/webp") 2x,
+        url("../img/tablet-hero-slide-3.webp") type("image/webp") 1x,
+        url("../img/tablet-hero-slide-3@2x.jpg") type("image/jpg") 2x,
+        url("../img/tablet-hero-slide-3.jpg") type("image/jpg") 1x
       );
   }
 
   @media (min-width: $width-desktop) {
     background-image:
       image-set(
-        url("../../img/desktop-hero-slide-3@2x.webp") type("image/webp") 2x,
-        url("../../img/desktop-hero-slide-3.webp") type("image/webp") 1x,
-        url("../../img/desktop-hero-slide-3@2x.jpg") type("image/jpg") 2x,
-        url("../../img/desktop-hero-slide-3.jpg") type("image/jpg") 1x
+        url("../img/desktop-hero-slide-3@2x.webp") type("image/webp") 2x,
+        url("../img/desktop-hero-slide-3.webp") type("image/webp") 1x,
+        url("../img/desktop-hero-slide-3@2x.jpg") type("image/jpg") 2x,
+        url("../img/desktop-hero-slide-3.jpg") type("image/jpg") 1x
       );
   }
 }
@@ -193,10 +193,10 @@
       height: 365px;
       background-image:
         image-set(
-          url("../../img/hero-slide-photo-tabled@2x.webp") type("image/webp") 2x,
-          url("../../img/hero-slide-photo-tabled.webp") type("image/webp") 1x,
-          url("../../img/hero-slide-photo-tabled@2x.png") type("image/png") 2x,
-          url("../../img/hero-slide-photo-tabled.png") type("image/png") 1x
+          url("../img/hero-slide-photo-tabled@2x.webp") type("image/webp") 2x,
+          url("../img/hero-slide-photo-tabled.webp") type("image/webp") 1x,
+          url("../img/hero-slide-photo-tabled@2x.png") type("image/png") 2x,
+          url("../img/hero-slide-photo-tabled.png") type("image/png") 1x
         );
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -215,10 +215,10 @@
       height: 459px;
       background-image:
         image-set(
-          url("../../img/hero-slide-photo-desktop@2x.webp") type("image/webp") 2x,
-          url("../../img/hero-slide-photo-desktop.webp") type("image/webp") 1x,
-          url("../../img/hero-slide-photo-desktop@2x.png") type("image/png") 2x,
-          url("../../img/hero-slide-photo-desktop.png") type("image/png") 1x
+          url("../img/hero-slide-photo-desktop@2x.webp") type("image/webp") 2x,
+          url("../img/hero-slide-photo-desktop.webp") type("image/webp") 1x,
+          url("../img/hero-slide-photo-desktop@2x.png") type("image/png") 2x,
+          url("../img/hero-slide-photo-desktop.png") type("image/png") 1x
         );
       background-repeat: no-repeat;
       background-size: 100% 100%;
@@ -316,9 +316,9 @@
 }
 
 .slide-hero__duration::before {
-  background-image: url("../../img/moon.svg");
+  background-image: url("../img/moon.svg");
 }
 
 .slide-hero__complexity::before {
-  background-image: url("../../img/level.svg");
+  background-image: url("../img/level.svg");
 }

@@ -91,7 +91,7 @@
     top: 0;
     width: 22px;
     height: 22px;
-    background-image: url("../../img/pin.svg");
+    background-image: url("../img/pin.svg");
     background-position: center;
     background-size: cover;
   }
@@ -121,13 +121,13 @@
 
 .contacts__item--phone {
   &::before {
-    background-image: url("../../img/phone.svg");
+    background-image: url("../img/phone.svg");
   }
 }
 
 .contacts__item--email {
   &::before {
-    background-image: url("../../img/mail.svg");
+    background-image: url("../img/mail.svg");
   }
 }
 

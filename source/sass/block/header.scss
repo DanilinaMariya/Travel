@@ -33,11 +33,11 @@
   background-color: transparent;
   padding: 0;
   border: none;
-  background-image: url("../../img/menu.svg");
+  background-image: url("../img/menu.svg");
   cursor: pointer;
 
   &--activ {
-    background-image: url("../../img/menu-close.svg");
+    background-image: url("../img/menu-close.svg");
   }
 
   @media (width <= 1439px) {
